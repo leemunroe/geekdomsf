@@ -1,0 +1,757 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    
+          <title>Geekdom - Collaborative Coworking Space in San Francisco California</title>
+          
+    <meta name="description" content="">
+    <meta name="author" content="brlrl">
+
+    <link href="http://geekdom.com/?css=global_embeds/site_css.v.1367267623" type="text/css" rel="stylesheet" />
+<link href="http://geekdom.com/?css=global_embeds/main_css.v.1384382812" type="text/css" rel="stylesheet" />
+<link href="http://geekdom.com/?css=global_embeds/sanantonio_css.v.1367207400" type="text/css" rel="stylesheet" />
+<link href="http://geekdom.com/themes/geekdom/default_site/global_embeds.group/sanfran.css" type="text/css" rel="stylesheet" />
+
+<link rel="stylesheet" href="http://geekdom.com/themes/geekdom/default_site/js/fancybox/jquery.fancybox.css?v=2.1.4" type="text/css" media="screen" />
+<link rel="stylesheet" href="http://geekdom.com/themes/geekdom/default_site/js/jquery.bxslider/jquery.bxslider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="http://geekdom.com/themes/geekdom/default_site/js/jquery.kwicks/jquery.kwicks.min.css" type="text/css" media="screen" />
+    <!-- HTML5 Shim -->
+<!-- [if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<[endif]-->
+    <!-- JS -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script src="http://geekdom.com/themes/geekdom/default_site/js/fancybox/jquery.fancybox.pack.js"></script>
+<script src="http://geekdom.com/themes/geekdom/default_site/js/jquery.bxslider/jquery.bxslider.min.js"></script>
+<script src="http://geekdom.com/themes/geekdom/default_site/js/jquery.kwicks/jquery.kwicks.min.js"></script>
+<script src="http://geekdom.com/themes/geekdom/default_site/js/application-sf.js"></script>
+<script src="http://geekdom.com/themes/geekdom/default_site/js/jquery.expander.js"></script>
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-38949793-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+    
+    <!-- JavaScript -->
+    
+    <script>
+    $(document).ready(function () {
+        $('.fulltext').hide();
+    
+        $('.blog-item .readmore').click(function (event) {
+            event.preventDefault();
+            $(this).parent().find('.fulltext').slideToggle('slow');
+            $(this).text($(this).text() == 'Read less...' ? 'Read more...' : 'Read less...');
+        });
+    })
+    </script>
+  </head>
+  <body>
+    <header>
+      <div id="main-nav" class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"  >
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </a>
+  
+            <div>
+              <a class="brand" href="/san-francisco">
+                <img src="http://geekdom.com//themes/geekdom/default_site/images/logo-nav-sf.png">
+              </a>
+              <a id="location-selector">
+               <span class="small icon batch-mapmarker"></span>
+              </a>
+            </div>
+  
+            <div id="location-screen" class="pull-left">
+              <h5>Choose your Geekdom</h5>
+              <ul>
+                <li><a href="/"><span class="icon batch-arrow-right"></span> Geekdom Home</a></li>
+                <li><a href="/san-antonio"><span class="icon batch-arrow-right"></span> San Antonio</a></li>
+                <li><a href="/san-francisco"><span class="icon batch-arrow-right"></span> San Francisco</a></li>
+              </ul>
+            </div>
+
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+                <li><a href="/san-francisco">Home</a></li>
+                <li><a href="/san-francisco/culture">Culture</a></li>
+                <li><a href="/san-francisco/people">People</a></li>
+                <li><a href="/san-francisco/members">Members</a></li>
+                <li><a href="/san-francisco/events">Events</a></li>
+                <li><a href="/san-francisco/contact">Contact</a></li>
+                
+             
+                
+                <li class="socials">
+                 <a href="https://twitter.com/geekdomsf" target="_blank"><span class="twitter"></span></a>
+                 <a href="https://angel.co/geekdom-sf" target="_blank"><span class="angel"></span></a>
+                </li>
+                
+              </ul>
+              <ul class="nav pull-right">
+                <li class="divider-vertical"></li>
+                <li><a href="/san-francisco/join">Join Geekdom</a></li>
+             <!--   <li>
+                  <a href="#" id="login">LOGIN</a>
+                </li>-->
+                <li class="divider-vertical"></li>
+              </ul>
+
+              <!--
+              <div id="login-screen">
+                <form>
+                  <div class="control-group">
+                    <input type="text" placeholder="Username">
+                  </div>
+                  <div class="control-group">
+                    <input type="password" placeholder="Password">
+                  </div>
+                  
+                  <div class="action">
+                    <button type="submit" class="red-btn">Login</button>
+                    <label class="checkbox">
+                      <input type="checkbox"> Remember Me
+                    </label>
+                  </div>
+                </form>
+                <div class="small">
+                  <a href="#">Forgot your password?</a>
+                </div>
+              </div><!-- #login-screen -->
+            </div><!-- .nav-collapse -->
+  
+          </div><!-- .container -->
+        </div><!-- .navbar-inner -->
+      </div><!-- .navbar -->
+    </header>
+<article id="sanantonio" class="content">
+  <div id="welcome-container">
+    <div id="welcome" class="container">
+      <div class="row-fluid">
+        <div id="whatis" class="span7">
+         
+          <p>We’re a collaborative community building developer-centric solutions.</p>
+          <div>
+            <!--<a href="/san-antonio/tour" class="red-btn">Take the Tour</a>-->
+          </div>
+        </div>
+      
+        <!--<div id="welcome-video" class="span8">
+          <div id="play">
+            <a data-fancybox-type="iframe" href="http://player.vimeo.com/video/68385518" class="video-fancy">
+              <div>
+                <img src="http://geekdom.com//themes/geekdom/default_site/images/vid-box.png" />
+              </div>
+            </a>
+          </div>
+        </div>-->
+        
+      </div><!-- row-fluid -->
+    </div><!-- container -->
+  </div><!-- #welcoming -->
+  
+  
+  
+  <!--<div id="startups" class="container">
+    <div class="row-fluid">
+      <div class="span2">
+        <h2>Home to over 200 Startups!</h2>
+      </div>
+      
+      <div id="startups-list" class="span10 row-fluid">
+        
+          <div class="span2 startup">
+          <a href="http://www.vosflips.com" target="_blank">
+            <img src="http://staging.geekdom.com/themes/geekdom/uploads/startups/vos.png" />
+          </a>
+          </div>
+        
+          <div class="span2 startup">
+          <a href="http://www.winslowswart.com" target="_blank">
+            <img src="http://staging.geekdom.com/themes/geekdom/uploads/startups/winslow-consulting.png" />
+          </a>
+          </div>
+        
+          <div class="span2 startup">
+          <a href="http://golivemagazine.com/" target="_blank">
+            <img src="http://staging.geekdom.com/themes/geekdom/uploads/startups/1010-magapp.png" />
+          </a>
+          </div>
+        
+          <div class="span2 startup">
+          <a href="http://gonzalezmosier.com" target="_blank">
+            <img src="http://staging.geekdom.com/themes/geekdom/uploads/startups/gmlaw.png" />
+          </a>
+          </div>
+        
+          <div class="span2 startup">
+          <a href="http://www.red-knight.com" target="_blank">
+            <img src="http://staging.geekdom.com/themes/geekdom/uploads/startups/redknight.png" />
+          </a>
+          </div>
+        
+          <div class="span2 startup">
+          <a href="http://www.tourleaf.com" target="_blank">
+            <img src="http://staging.geekdom.com/themes/geekdom/uploads/startups/tourleaf.png" />
+          </a>
+          </div>
+        
+      </div>
+    </div>
+  </div><!-- startups --*>-->
+  
+  
+  <div class="container">
+  
+  <article id="mission" class="container content">
+        <!--<div class="dot-border"></div>-->
+  
+<!--        <div id="our-mission" class="row-fluid">
+          <div class="span2">
+            <span class="batch-bigflag"></span>
+          </div>
+  
+          <div class="span10">
+            <h1>Our Mission</h1>
+            <h2>
+              Like a gym membership for geeks: Our mission is to provide an inspiring environment for bright minds to explore ideas in entrepreneurship, technology, leadership, and creativity, develop talents and connect to a community of like-minded people.
+            </h2>
+          </div>
+        </div>
+  
+        <div class="dot-border"></div>-->
+  
+        <div class="center">
+        
+        <p>At Geekdom we believe in bringing great people together.</p>
+        <p>Our coworking space provides easy access to: <span class="highlight"><a href="http://geekdom.com/san-francisco/people">industry connections</a>, <a href="http://geekdom.com/san-francisco/people">mentorship</a>, and <a href="http://geekdom.com/san-francisco/events">events</a></span>.  </p><p></p>
+  
+          
+          <div class="dot-border"></div>
+          <div id="pillars">
+            <div class="pillar">
+              
+        <div class="tlogo">
+                <a href="http://geekdom.com/san-francisco/members"><img src="http://geekdom.com//themes/geekdom/default_site/images/sflogos/drone.png"  /></a>
+        </div>
+        
+              <div class="pillar-description">
+                <p>“Geekdom gives us access to a who's who of successful developers and entrepreneurs, It's great to have people in your corner that genuinely want to help you succeed.”</p>
+                <p class="founder">- Brad Rydzewski, co-founder</p>
+              </div>
+            </div><!-- .pillar -->
+  
+            <div class="pillar">
+              
+                <div class="tlogo">
+                <a href="http://geekdom.com/san-francisco/members"><img src="http://geekdom.com//themes/geekdom/default_site/images/sflogos/statuspage.png" /></a>
+                </div>
+
+              <div class="pillar-description">
+                <p>“Geekdom is a highly technical and creative space where we can bounce ideas off of other founders and quickly get feedback.”</p>
+                <p class="founder">- Danny Olinsky, co-founder</p>
+              </div>
+            </div><!-- .pillar -->
+  
+
+  
+
+  
+          </div>
+        </div><!-- #pillars -->
+        <div class="dot-border"></div>
+  
+<!--        <div class="row-fluid quote-red">
+          <div class="span2">
+            <div class="icon left-double-quote"></div>
+          </div>
+          <div class="span10">
+            <p>Put San Francisco Quote Here</p>
+          </div>
+        </div>-->
+  
+        
+        
+        
+        
+        
+        <div class="cta">
+          <h2>Come work next to startups and entrepreneurs from <br />Y-Combinator, TechStars, and StartX!</h2>
+          <br /><a href="/san-francisco/join" class="red-btn">Apply Here</a>
+        </div>
+        
+        
+        <div class="dot-border"></div>
+        <img src="http://geekdom.com//themes/geekdom/default_site/images/people-wide.png" class="" />
+        <div class="dot-border"></div>
+      </article>
+  
+  
+  </div>
+  
+<!--  <div id="signup" class="container">
+    <div class="row-fluid">
+      <div class="span4">
+        <h2>No contracts.</h2>
+        <h2>No deposits.</h2>
+        <h2>No landlords.</h2>
+        <h2 class="red">Just smart people changing the world.</h2>
+        <div id="perks">
+          <ul>
+            
+              <li class="perk"><span class="icon batch-star"></span> 45,000 Sq. Ft.</li>
+            
+              <li class="perk"><span class="icon batch-star"></span> No Long-Term Leases</li>
+            
+              <li class="perk"><span class="icon batch-star"></span> Dedicated Desks &amp; Offices</li>
+            
+              <li class="perk"><span class="icon batch-star"></span> Free Wi-Fi (of course)</li>
+            
+              <li class="perk"><span class="icon batch-star"></span> Month-to-Month Membership</li>
+            
+          </ul>
+        </div>
+        
+        <div class="pad">
+          <h2><a href="/san-antonio/tour" id="tour-btn">Take a Tour</a></h2>
+        </div>
+        
+      </div>
+
+      <div id="plans" class="row-fluid span8">
+        <div class="plan span6">
+          <div class="plan-type">
+            <h2>Hot Desk</h2>
+          </div>
+          <div class="plan-details">
+            <div class="plan-price">
+              <h3>$50</h3>
+            </div>
+            <div class="plan-description">
+              <p>Shared Community Space</p>
+              <p>Desk in Community Areas</p>
+              <p>24-7 Access</p>
+              <p>2 Hours/m Conference Room</p>
+            </div>
+          </div>
+          <div class="apply">
+            <a href="/san-antonio/signup" class="red-btn">Apply Now</a>
+          </div>
+        </div><!-- .plan --*>
+        
+        <div class="plan span6">
+          <div class="plan-type">
+            <h2>Dedicated Desk</h2>
+          </div>
+          <div class="plan-details">
+            <div class="plan-price">
+              <h3>$200</h3>
+            </div>
+            <div class="plan-description">
+              <p>Dedicated Personal Desk</p>
+              <p>Office Space</p>
+              <p>24-7 Access</p>
+              <p>Mailing Address &amp; Parking</p>
+            </div>
+          </div>
+          <div class="apply">
+            <a href="/san-antonio/signup" class="red-btn">Apply Now</a>
+          </div>
+          <div class="startups">
+            $150/Month for Startups!
+          </div>
+        </div><!-- .plan --*>
+      </div><!-- #plans --*>
+    </div><!-- row --*>
+  </div><!-- #signup --*>
+
+  <div class="dot-border container"></div>-->
+  
+  <!--<div id="members">
+    <div class="center">
+      <h1>The Members</h1>
+      <h3>Some of the 600+ members that call Geekdom home. <a href="#" id="see-more-geeks">See More.</a></h3>
+    </div>
+
+    <div id="members-container">
+      <div id="members-list" class="geeks container">
+    <div class="row-fluid">
+            
+        <div class="span2 geek"><img src="http://staging.geekdom.com/themes/geekdom/uploads/profile_pics/ulises-reyes.png" /></div>
+        <div class="row-fluid geek-info">
+          <div class="span4">
+            <img src="http://staging.geekdom.com/themes/geekdom/uploads/profile_pics/ulises-reyes.png" />
+          </div>
+          <div class="span8">
+            <a class="batch-close-btn" href="#"></a>
+            <h3>Ulises Reyes</h3>
+            <a href="http://www.megustaulises.com/" target="_blank">http://www.megustaulises.com/</a>
+            <p>I'd like to help people use energy more efficiently</p>
+            <p>Tons of smart people conglomerated in a single spot.</p>
+          </div>
+        </div>
+        
+            
+        <div class="span2 geek"><img src="http://staging.geekdom.com/themes/geekdom/uploads/profile_pics/jeff-kinsey.png" /></div>
+        <div class="row-fluid geek-info">
+          <div class="span4">
+            <img src="http://staging.geekdom.com/themes/geekdom/uploads/profile_pics/jeff-kinsey.png" />
+          </div>
+          <div class="span8">
+            <a class="batch-close-btn" href="#"></a>
+            <h3>Jeff SKI Kinsey</h3>
+            <a href="http://jmpurl.info/ski" target="_blank">http://jmpurl.info/ski</a>
+            <p>I have the ability to eliminate hunger and poverty in my lifetime.</p>
+            <p>Geekdom is a small, powerful community that empowers humans to achieve great works.</p>
+          </div>
+        </div>
+        
+            
+        <div class="span2 geek"><img src="http://staging.geekdom.com/themes/geekdom/uploads/profile_pics/oscar-tovar.png" /></div>
+        <div class="row-fluid geek-info">
+          <div class="span4">
+            <img src="http://staging.geekdom.com/themes/geekdom/uploads/profile_pics/oscar-tovar.png" />
+          </div>
+          <div class="span8">
+            <a class="batch-close-btn" href="#"></a>
+            <h3>Oscar Tovar</h3>
+            <a href="http://www.losdisenadores.com" target="_blank">http://www.losdisenadores.com</a>
+            <p>less complaining, deeper thinking, more doing</p>
+            <p>Geekdom transforms geeks into super-cool geeks</p>
+          </div>
+        </div>
+        
+            
+        <div class="span2 geek"><img src="http://staging.geekdom.com/themes/geekdom/uploads/profile_pics/drew-witt.png" /></div>
+        <div class="row-fluid geek-info">
+          <div class="span4">
+            <img src="http://staging.geekdom.com/themes/geekdom/uploads/profile_pics/drew-witt.png" />
+          </div>
+          <div class="span8">
+            <a class="batch-close-btn" href="#"></a>
+            <h3>Drew Witt</h3>
+            <a href="http://www.drewwitt.com" target="_blank">http://www.drewwitt.com</a>
+            <p>I want to show people a way to love your creative work while loving your neighbor.</p>
+            <p>Geekdom is magical because it brings design and tech mavericks under one roof.</p>
+          </div>
+        </div>
+        
+            
+        <div class="span2 geek"><img src="http://staging.geekdom.com/themes/geekdom/uploads/profile_pics/francisco-cantu.png" /></div>
+        <div class="row-fluid geek-info">
+          <div class="span4">
+            <img src="http://staging.geekdom.com/themes/geekdom/uploads/profile_pics/francisco-cantu.png" />
+          </div>
+          <div class="span8">
+            <a class="batch-close-btn" href="#"></a>
+            <h3>Francisco Cantu</h3>
+            <a href="http://macrecon.com" target="_blank">http://macrecon.com</a>
+            <p>Create amazing things.</p>
+            <p>The people makes Geekdom the best place there is.</p>
+          </div>
+        </div>
+        
+            
+        <div class="span2 geek"><img src="http://staging.geekdom.com/themes/geekdom/uploads/profile_pics/blake-yeager.png" /></div>
+        <div class="row-fluid geek-info">
+          <div class="span4">
+            <img src="http://staging.geekdom.com/themes/geekdom/uploads/profile_pics/blake-yeager.png" />
+          </div>
+          <div class="span8">
+            <a class="batch-close-btn" href="#"></a>
+            <h3>Blake Yeager</h3>
+            <a href="http://www.blakeyeager.com" target="_blank">http://www.blakeyeager.com</a>
+            <p>I want to create technology that enables people to do revolutionary things.</p>
+            <p>The community environment and the focus on collaboration make Geekdom awesome.</p>
+          </div>
+        </div>
+        
+        </div><div class="row-fluid">    
+        <div class="span2 geek"><img src="http://staging.geekdom.com/themes/geekdom/uploads/profile_pics/david-piedra.png" /></div>
+        <div class="row-fluid geek-info">
+          <div class="span4">
+            <img src="http://staging.geekdom.com/themes/geekdom/uploads/profile_pics/david-piedra.png" />
+          </div>
+          <div class="span8">
+            <a class="batch-close-btn" href="#"></a>
+            <h3>David Piedra</h3>
+            <a href="http://www.linkedin.com/pub/david-piedra/4/b11/2b5/" target="_blank">http://www.linkedin.com/pub/david-piedra/4/b11/2b5/</a>
+            <p>I'd change the world by focusing my efforts on education and underprivileged kids. </p>
+            <p>Geekdom provides you with the environment & tools to put your dreams into action.</p>
+          </div>
+        </div>
+        
+            
+        <div class="span2 geek"><img src="http://staging.geekdom.com/themes/geekdom/uploads/profile_pics/daniel-aguallo.png" /></div>
+        <div class="row-fluid geek-info">
+          <div class="span4">
+            <img src="http://staging.geekdom.com/themes/geekdom/uploads/profile_pics/daniel-aguallo.png" />
+          </div>
+          <div class="span8">
+            <a class="batch-close-btn" href="#"></a>
+            <h3>Daniel Aguallo</h3>
+            <a href="http://www.infinity-sa.com" target="_blank">http://www.infinity-sa.com</a>
+            <p>Helping one business at a time and impacting the nation as a whole.</p>
+            <p>We can collectively collaborate disruptive business practices.
+</p>
+          </div>
+        </div>
+        
+            
+        <div class="span2 geek"><img src="http://staging.geekdom.com/themes/geekdom/uploads/profile_pics/samuel-ximenes.png" /></div>
+        <div class="row-fluid geek-info">
+          <div class="span4">
+            <img src="http://staging.geekdom.com/themes/geekdom/uploads/profile_pics/samuel-ximenes.png" />
+          </div>
+          <div class="span8">
+            <a class="batch-close-btn" href="#"></a>
+            <h3>Samuel Ximenes</h3>
+            <a href="http://www.explorationarchitecture.com" target="_blank">http://www.explorationarchitecture.com</a>
+            <p>Expand our reach and presence beyond earth to survive and thrive in space.</p>
+            <p>There is talent and new ideas everywhere you turn!</p>
+          </div>
+        </div>
+        
+            
+        <div class="span2 geek"><img src="http://staging.geekdom.com/themes/geekdom/uploads/profile_pics/adam-liebel.png" /></div>
+        <div class="row-fluid geek-info">
+          <div class="span4">
+            <img src="http://staging.geekdom.com/themes/geekdom/uploads/profile_pics/adam-liebel.png" />
+          </div>
+          <div class="span8">
+            <a class="batch-close-btn" href="#"></a>
+            <h3>Adam Liebel</h3>
+            <a href="http://www.adamliebel.com" target="_blank">http://www.adamliebel.com</a>
+            <p>Evolve technology to provide a better, easier, and affordable experience for all.</p>
+            <p>Geeks can organically grow personal relationships, mentorships, and partnerships.</p>
+          </div>
+        </div>
+        
+            
+        <div class="span2 geek"><img src="http://staging.geekdom.com/themes/geekdom/uploads/profile_pics/leticia-barrientos.png" /></div>
+        <div class="row-fluid geek-info">
+          <div class="span4">
+            <img src="http://staging.geekdom.com/themes/geekdom/uploads/profile_pics/leticia-barrientos.png" />
+          </div>
+          <div class="span8">
+            <a class="batch-close-btn" href="#"></a>
+            <h3>Leticia Barrientos</h3>
+            <a href="http://www.kirpeep.com/users/2" target="_blank">http://www.kirpeep.com/users/2</a>
+            <p>By making it easier for people to exchange goods and services with or without money.</p>
+            <p>It just is.</p>
+          </div>
+        </div>
+        
+            
+        <div class="span2 geek"><img src="http://staging.geekdom.com/themes/geekdom/uploads/profile_pics/vilmar-morgan.png" /></div>
+        <div class="row-fluid geek-info">
+          <div class="span4">
+            <img src="http://staging.geekdom.com/themes/geekdom/uploads/profile_pics/vilmar-morgan.png" />
+          </div>
+          <div class="span8">
+            <a class="batch-close-btn" href="#"></a>
+            <h3>Vilmar Morgan</h3>
+            <a href="http://www.vilmarmorgan.com" target="_blank">http://www.vilmarmorgan.com</a>
+            <p>To help people start something meaningful in their lives.</p>
+            <p>I'm inspired by Geekdom's collaborative spirit.</p>
+          </div>
+        </div>
+        
+            
+  </div>
+</div>
+    </div>
+  </div>
+
+  <div class="dot-border container"></div>-->
+
+  <div id="events" class="container">
+    <div class="row-fluid">
+      <div id="events-list" class="span8">
+        <h1 class="black">Let's get together and hang out.</h1>
+        <h3>We're a pretty lively bunch over here, there's always something cool going on.</h3>
+        <div class="pad"></div>
+        
+      </div>
+
+
+  <script type="text/javascript">
+  function formatHours(hour) {
+    if (hour > 12)
+      hour = hour - 12;
+    return hour;
+  }
+  
+  function isAmOrPm(hour) {
+    if (hour >= 12)
+      return "PM";
+    else
+      return "AM";
+  }
+  
+  function formatMinutes(minute) {
+    if (minute < 10)
+      minute = "0" + minute;
+    return minute;
+  }
+  
+  function formatMonth(month) {
+    switch (month) {
+      case 0:
+        return "Jan";
+        break;
+      case 1:
+        return "Feb";
+      case 2:
+        return "Mar";
+      case 3:
+        return "Apr";
+      case 4:
+        return "May";
+      case 5:
+        return "Jun";
+      case 6:
+        return "Jul";
+      case 7:
+        return "Aug";
+      case 8:
+        return "Sep";
+      case 9:
+        return "Oct";
+      case 10:
+        return "Nov";
+      case 11:
+        return "Dec";
+    }
+  }
+
+  $(document).ready(function(){
+    var feedUrl = "http://www.google.com/calendar/feeds/geekdomsf%40gmail.com/public/full?orderby=starttime&sortorder=a&futureevents=true&fields=entry(title,gd:when,content,link)&alt=json";
+
+        
+    $.getJSON(feedUrl, function(data){
+      $.each(data.feed.entry, function(i, item){
+        if(i >= 0 && i <= 3) {
+          var event_url = item.link[0].href;
+          var event_title = item.title.$t;
+          var event_content = item.content.$t;
+          
+          var event_date = new Date(item.gd$when[0].startTime);
+          var event_day = event_date.getDate();
+          var event_month = formatMonth(event_date.getMonth());
+
+          var event_hours = formatHours(event_date.getHours());
+          var event_minutes = formatMinutes(event_date.getMinutes());
+          var ampm = isAmOrPm(event_date.getHours());
+          var event_time = event_hours + ':' + event_minutes + ampm;
+          
+          $('#events-list').append(
+            "<div class='event row-fluid'>"
+            + "<div class='event-date span2'>"
+            + "<div class='event-month'>"
+            + event_month
+            + "</div>"
+            + "<div class='event-day'>"
+            + event_day 
+            + "</div>"
+            + "<div class='event-time'>"
+            + event_time
+            + "</div>"
+            + "</div>"
+            + "<div class='span10'>"
+            + "<h3 class='event-title red'>"
+            + event_title
+            + "</h3>"
+            + "<p class='event-content'>"
+            + event_content
+            + "</p>"
+            + "<a href='"
+            + event_url
+            + "' target='_blank'>Event Details <span class='icon batch-arrow-right'></span></a>"
+            + "</div>"
+            + "</div>"
+          );
+        }
+      });
+    });
+    
+  });
+  </script>
+
+      <div class="span4">
+        <div class="red-box">
+          <h1>Looking for a great place to host your event?</h1>
+          <p class="small">Send us a message about your party or event and we'll be sure to contact you.</p>
+        </div>
+        <div class="pad">
+          <a href="/san-francisco/contact" class="black-btn">Contact Us</a>
+        </div>
+
+        <div class="pad-big">
+          <a href="/san-francisco/events" class="red-btn">View Full Calendar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+<footer>
+      <div class="container">
+        <div class="row-fluid">
+          <div class="span4">
+            <div class="copyright">
+              &copy; Geekspace, LLC 2013
+            </div>
+
+            
+          </div><!-- .copyright -->
+          
+          <div id="newsletter" class="span8">            
+            <!-- Begin MailChimp Signup Form -->
+            <div id="mc_embed_signup">
+            <form action="http://geekdom.us7.list-manage.com/subscribe/post?u=867d6cd68e3078447f9a035af&amp;id=e9d2f90004" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-inline" target="_blank" novalidate>
+              <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email Address">
+              <input type="submit" value="Newsletter Signup" name="subscribe" id="mc-embedded-subscribe" class="button red-btn">
+              <div id="mce-responses" class="clear">
+                <div class="response" id="mce-error-response" style="display:none"></div>
+                <div class="response" id="mce-success-response" style="display:none"></div>
+              </div>  
+            </form>            
+            </div>
+            <!--End mc_embed_signup-->
+          </div><!-- .newsletter -->
+        </div><!-- .row-fluid -->
+        
+        <div class="row-fluid">
+          <div class="span4">
+            <a href="http://rackspace.com"><img src="http://geekdom.com//themes/geekdom/default_site/images/rs_logo.png" /></a>
+          </div>
+          
+          <div class="span8" id="siteby">
+            Website Design by <a href="http://brlrl.com">Barrel Roll Creative</a> - Proud Geekdom Members
+          </div>
+        </div><!-- .row-fluid -->
+        
+      </div>
+    </footer>
+    <div id="funding-btn">
+      <a href="/funding"><img src="http://geekdom.com//themes/geekdom/default_site/images/Geekdom_Fundtag.jpg" /></a>
+    </div>
+
+  </body>
+</html>
